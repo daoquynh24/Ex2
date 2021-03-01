@@ -63,37 +63,37 @@ blockquote {
 /* vietnamese */
 @font-face {
   font-family: "Open Sans";
-  src: url("/fonts/OpenSans-Light.ttf") format("truetype");
+  src: url("../../fonts/OpenSans-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal; }
 
 @font-face {
   font-family: "Open Sans";
-  src: url("/fonts/OpenSans-SemiBold.ttf") format("truetype");
+  src: url("../../fonts/OpenSans-SemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal; }
 
 @font-face {
   font-family: "Open Sans";
-  src: url("/fonts/OpenSans-Bold.ttf") format("truetype");
+  src: url("../../fonts/OpenSans-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal; }
 
 @font-face {
   font-family: "Open Sans";
-  src: url("/fonts/OpenSans-ExtraBold.ttf") format("truetype");
+  src: url("../../fonts/OpenSans-ExtraBold.ttf") format("truetype");
   font-weight: 800;
   font-style: normal; }
 
 @font-face {
   font-family: "Open Sans";
-  src: url("/fonts/OpenSans-Regular.ttf") format("truetype");
+  src: url("../../fonts/OpenSans-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal; }
 
 @font-face {
   font-family: "Lora";
-  src: url("/fonts/Lora-Bold.ttf") format("truetype");
+  src: url("../../fonts/Lora-Bold.ttf") format("truetype");
   font-style: normal; }
 
 * {
@@ -155,7 +155,7 @@ a:hover {
     display: block; }
 
 .header {
-  background-image: url(/img/background2.png);
+  background-image: url(../../img/background2.png);
   background-size: cover;
   background-position: center;
   color: #fff;
@@ -414,7 +414,7 @@ a:hover {
     color: #903938; }
 
 .content {
-  background-image: url(/img/background1.png);
+  background-image: url(../../img/background1.png);
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -644,7 +644,7 @@ a:hover {
       overflow: hidden; }
   .content-trangchu .item-rate {
     text-align: center;
-    background-image: url(/img/background3.png);
+    background-image: url(../../img/background3.png);
     display: inline-block;
     width: 47%;
     padding: 2rem;
