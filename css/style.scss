@@ -18,7 +18,7 @@
     }
 }
 .header{
-    background-image: url(../img/background2.png);
+    background-image: url(../../img/background2.png);
     background-size: cover;
     background-position: center;
     color: #fff;
@@ -368,7 +368,7 @@
     }
 }
 .content{
-    background-image: url(../img/background1.png);
+    background-image: url(../../img/background1.png);
     background-size: cover;
     background-position: center;
     text-align: center;
@@ -671,14 +671,12 @@
             -webkit-box-orient: vertical;
             -webkit-line-clamp: 2;
             overflow: hidden;
-
         }
-
     }
 
     .item-rate{
             text-align: center;
-            background-image: url(../img/background3.png);
+            background-image: url(../../img/background3.png);
             display: inline-block;
             width: 47%;
             padding: 2rem;
@@ -740,11 +738,15 @@
                 &.expand{
                     padding: 1rem 0 1rem 0;
                 }
+                &.expand:hover{
+                    border-left: none;
+                }
             }
             li:hover{
                 background-color: $background-color;
                 color: $main-color;
                 border-left: 3px solid $main-color;
+                cursor: pointer;
             }
             .icon-show{
                 float: right;
@@ -833,7 +835,25 @@
                 font-size: 1.4rem;
                 font-weight: lighter;
                 float: right;
-            }            
+                cursor: pointer;
+            }   
+            .sort:hover .sort-list{
+                display: block;
+            }         
+            .sort-list {
+                border: 1px solid #ccc;
+                border-radius: 2px;
+                background-color: $white-color;
+                // margin-top: -0.5rem;
+                display: none;
+                >li{
+                    padding: 0.5rem 1rem;
+                    border-bottom: 1px solid $boder-color;
+                }
+                >li:hover{
+                    background-color: #FFE9CB;
+                }
+            }
         }
         .item:hover{
             background-color: $background-color;
@@ -873,6 +893,9 @@
                     display: inline-block;
                     font-size: 1.4rem;
                     margin-left: 2rem;
+                    // @media (max-width:739px) {
+                    //     display: block;
+                    // }
 
                     img{
                         width: 2rem;
@@ -884,7 +907,7 @@
             }
             
             .detail-result{
-                display: inline-block;
+                display: contents;
                 color: $text-gray-color;
                 margin-left: 0.5rem;
                 margin-right: 1rem;
@@ -909,8 +932,15 @@
             .edit {
                 display: inline-block;
                 float: right;
-                padding: 1rem;
+                padding: 1rem 0;
                 color: $link-color;
+                @media (max-width:739px) {
+                    display: block;
+                    float: none;
+                }
+            }
+            .edit:hover{
+                color: $main-color;
             }
         }
     }

@@ -34,3 +34,22 @@ $(".sidebar-menu a").click(function(e){
 		}
     }
 });
+$(".menu-list a").click(function(e){
+    var parent=$(this).parent();
+    if(parent.find(">ul").length){
+        e.preventDefault();
+		var hasClassActive = parent.find(".icon-show").hasClass("active");
+		var hasClassHide = parent.find(">ul").hasClass("hide");
+		if (hasClassActive && !hasClassHide) {
+			parent.find(".icon-show").removeClass("active");
+			parent.find(">ul").addClass("hide");
+			parent.removeClass("expand");
+		} else {
+			parent.find(".icon-show").addClass("active");
+			parent.find(">ul").removeClass("hide");
+			parent.addClass("expand");
+		}
+    }
+});
+
+

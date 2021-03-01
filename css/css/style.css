@@ -63,37 +63,37 @@ blockquote {
 /* vietnamese */
 @font-face {
   font-family: "Open Sans";
-  src: url("../../fonts/OpenSans-Light.ttf") format("truetype");
+  src: url("/fonts/OpenSans-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal; }
 
 @font-face {
   font-family: "Open Sans";
-  src: url("../../fonts/OpenSans-SemiBold.ttf") format("truetype");
+  src: url("/fonts/OpenSans-SemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal; }
 
 @font-face {
   font-family: "Open Sans";
-  src: url("../../fonts/OpenSans-Bold.ttf") format("truetype");
+  src: url("/fonts/OpenSans-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal; }
 
 @font-face {
   font-family: "Open Sans";
-  src: url("../../fonts/OpenSans-ExtraBold.ttf") format("truetype");
+  src: url("/fonts/OpenSans-ExtraBold.ttf") format("truetype");
   font-weight: 800;
   font-style: normal; }
 
 @font-face {
   font-family: "Open Sans";
-  src: url("../../fonts/OpenSans-Regular.ttf") format("truetype");
+  src: url("/fonts/OpenSans-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal; }
 
 @font-face {
   font-family: "Lora";
-  src: url("../../fonts/Lora-Bold.ttf") format("truetype");
+  src: url("/fonts/Lora-Bold.ttf") format("truetype");
   font-style: normal; }
 
 * {
@@ -688,10 +688,13 @@ a:hover {
         padding: 1rem 2rem; }
       .content-tracuu .menu > .menu-list > li.expand {
         padding: 1rem 0 1rem 0; }
+      .content-tracuu .menu > .menu-list > li.expand:hover {
+        border-left: none; }
     .content-tracuu .menu > .menu-list li:hover {
       background-color: #e6e6e644;
       color: #903938;
-      border-left: 3px solid #903938; }
+      border-left: 3px solid #903938;
+      cursor: pointer; }
     .content-tracuu .menu > .menu-list .icon-show {
       float: right;
       transform: translate(-1rem, 30%) rotate(-90deg); }
@@ -758,7 +761,20 @@ a:hover {
     .content-tracuu .view .search-result .sort {
       font-size: 1.4rem;
       font-weight: lighter;
-      float: right; }
+      float: right;
+      cursor: pointer; }
+    .content-tracuu .view .search-result .sort:hover .sort-list {
+      display: block; }
+    .content-tracuu .view .search-result .sort-list {
+      border: 1px solid #ccc;
+      border-radius: 2px;
+      background-color: #fff;
+      display: none; }
+      .content-tracuu .view .search-result .sort-list > li {
+        padding: 0.5rem 1rem;
+        border-bottom: 1px solid #d8d8d841; }
+      .content-tracuu .view .search-result .sort-list > li:hover {
+        background-color: #FFE9CB; }
   .content-tracuu .view .item:hover {
     background-color: #e6e6e644;
     cursor: pointer; }
@@ -794,7 +810,7 @@ a:hover {
     .content-tracuu .view .item .detail-title {
       display: inline-block; }
     .content-tracuu .view .item .detail-result {
-      display: inline-block;
+      display: contents;
       color: #8D8D8E;
       margin-left: 0.5rem;
       margin-right: 1rem; }
@@ -812,8 +828,14 @@ a:hover {
     .content-tracuu .view .item .edit {
       display: inline-block;
       float: right;
-      padding: 1rem;
+      padding: 1rem 0;
       color: #CE7A58; }
+      @media (max-width: 739px) {
+        .content-tracuu .view .item .edit {
+          display: block;
+          float: none; } }
+    .content-tracuu .view .item .edit:hover {
+      color: #903938; }
 
 .pagination-table {
   display: inline-block;
