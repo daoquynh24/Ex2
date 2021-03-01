@@ -1,0 +1,56 @@
+
+*{
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%; /* Tương ứng 12px . 1rem = 10px*/
+    line-height: 1.6rem;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: $white-color;
+    color: $text-color;
+    font-size: 1.4rem;
+}
+
+// a{
+//     color: $link-color;
+// }
+a:hover{
+    color: #d04f1b;
+}
+.btn, button, input:hover,
+.btn, button:focus, input:focus{
+    // border: none;
+    outline: none;
+}
+.show{
+    display: block;
+}
+.hide{
+    display: none;
+}
+@media(max-width: 1023px){
+    .hide-mb-tl{
+        display: none;
+    }
+    .show-mb-tl{
+        display: block;
+    }
+
+}
+
+.img-small{
+    width: 7rem;
+    height: 6.5rem;
+}
+.img-large{
+    width: 9rem;
+    height: 9rem;
+    margin: 1rem;
+}
+.img-large1{
+    width: 11rem;
+}
